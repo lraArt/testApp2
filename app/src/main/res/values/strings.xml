@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">testApp</string>
+    <string name="label_confirm">确定</string>
+    <string name="my_accessibility_description">确定</string>
+</resources>
