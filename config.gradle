@@ -79,6 +79,7 @@ ext {
             //用于webp的支持
             "animated-webp"         : "com.facebook.fresco:animated-webp:1.9.0",
             "okhttp3-integration"   : "com.github.bumptech.glide:okhttp3-integration:${dependVersion.glideSdkVersion}"
+
     ]
 
     otherDeps = [

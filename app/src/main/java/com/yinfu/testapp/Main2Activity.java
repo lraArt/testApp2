@@ -1,5 +1,6 @@
 package com.yinfu.testapp;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.util.DisplayMetrics;
 import android.widget.FrameLayout;
@@ -36,7 +37,9 @@ public class Main2Activity extends BaseActivity<MainPresenter> implements MainCo
             @Override
             public void btn1OnClick() {
                 ArmsUtils.makeText(Main2Activity.this, "btn1OnClick");
-                WebPGiftLoader.loaderWebPImage(Main2Activity.this, flGift, "file:///android_asset/image200.webp");
+                startActivity(new Intent(Main2Activity.this, GiftActivity.class));
+//                new WebPGiftLoader(flGift).loaderWebPImage(Main2Activity.this, "file:///android_asset/frametime2001.webp");
+//                mPresenter.downFile(Main2Activity.this);
             }
         });
     }
@@ -66,6 +69,8 @@ public class Main2Activity extends BaseActivity<MainPresenter> implements MainCo
 
     @Override
     public void showLoading() {
+//        new WebPGiftLoader(flGift).loaderWebPImage(Main2Activity.this, "file:///android_asset/image200.webp");
+//        WebPGiftLoader.loaderWebPImage(Main2Activity.this, flGift, "https://raw.githubusercontent.com/mochengsheng/testApp2/master/app/src/main/assets/image200.webp");
     }
 
     @Override

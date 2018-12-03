@@ -39,6 +39,10 @@
                 android:name="android.accessibilityservice"
                 android:resource="@xml/my_services_config" />
         </service>
+
+        <activity
+            android:name=".GiftActivity"
+            android:theme="@style/NoTitleTranslucentTheme" />
     </application>
 
 </manifest>

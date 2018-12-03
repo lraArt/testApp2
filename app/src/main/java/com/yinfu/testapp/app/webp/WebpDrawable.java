@@ -131,7 +131,6 @@ public class WebpDrawable extends Drawable implements WebpFrameLoader.FrameCallb
         } else if (this.isStarted) {
             this.startRunning();
         }
-
         return super.setVisible(visible, restart);
     }
 
